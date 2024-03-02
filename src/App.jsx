@@ -27,7 +27,6 @@ function deriveActivePlayer(gameTurns) {
 }
 
 function deriveGameBoard(gameTurns) {
-  //deriving gameboard
   let gameBoard = [...INITIAL_GAME_BOARD.map((array) => [...array])]; //here we are mutating in the future, thats a problem so we deep copy initialgameboard. Because when we reset the initialgameboard array stays. so making a new copy using spread
 
   for (let turn of gameTurns) {
